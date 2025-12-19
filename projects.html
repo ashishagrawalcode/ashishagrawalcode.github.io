@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Ashish Agrawal</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/code.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-container">
+        <div class="grid-overlay"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <div class="scroll-progress"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Ashish<span class="dot">.</span></a>
+        <ul class="nav-links">
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="gallery.html">Moments</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#contact" class="cta-btn">Say Hi!</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    
+    <div class="mobile-menu">
+        <i class="fas fa-times close-menu"></i>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Moments</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+
+    <main class="container page-content">
+        
+        <div class="section-header" style="display: block; text-align: center; margin-bottom: 60px;">
+            <h1 style="font-size: 3rem; margin-bottom: 15px;">Selected Works 💻</h1>
+            <p style="color: var(--text-gray); max-width: 600px; margin: 0 auto;">
+                A collection of my coding experiments. From telemedicinal apps to financial trackers, 
+                here is what I've been building lately.
+            </p>
+        </div>
+
+        <div class="grid-3">
+            
+            <article class="card tilt-card project-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80" alt="SwasthSathi">
+                    <div class="project-links">
+                        <a href="https://github.com/ashishagrawalcode/SwasthSathi_" title="View Code"><i class="fab fa-github"></i></a>
+                        <a href="https://swasthsathi-portal.onrender.com/" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <div class="card-content">
+                    <div class="card-top">
+                        <h3>SwasthSathi</h3>
+                        <span class="status-tag completed">Completed</span>
+                    </div>
+                    <p>Developed for the Smart India Hackathon (SIH) to bridge the gap in rural healthcare. My primary role involved UX design, requirements gathering, and using AI-assisted tools for rapid prototyping to create a seamless appointment scheduling system.</p>
+                    
+                    <div class="tech-stack">
+                        <span>Python</span><span>JavaScript</span><span>HTML/CSS</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card tilt-card project-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80" alt="Finwise">
+                    <div class="project-links">
+                        <a href="https://github.com/ashishagrawalcode/Fin-Wise" title="View Code"><i class="fab fa-github"></i></a>
+                        <a href="https://agrawalashish815.pythonanywhere.com/" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <div class="card-top">
+                        <h3>Finwise</h3>
+                        <span class="status-tag progress">In Progress</span>
+                    </div>
+                    <p>A financial literacy platform that turns learning about money into an engaging game. Unlike standard trackers, this app focuses on education through interactive modules, quizzes, and rewards, helping users master financial concepts in a fun, gamified environment.</p>
+                    
+                    <div class="tech-stack">
+                        <span>Logic</span><span>Python</span><span>Data</span><span>CSS</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card tilt-card project-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80" alt="Eternite">
+                    <div class="project-links">
+                        <a href="https://github.com/ashishagrawalcode/eternite" title="View Code"><i class="fab fa-github"></i></a>
+                        <a href="https://eterniteapp.vercel.app/" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <div class="card-top">
+                        <h3>Eternite</h3>
+                        <span class="status-tag idea">Concept</span>
+                    </div>
+                    <p>A specialized e-commerce platform dedicated to perfumes, body mists, and lotions. The project focuses on creating a luxurious digital shopping experience, featuring elegant product showcases, intuitive category filtering, and a smooth cart-to-checkout flow.</p>
+                    
+                    <div class="tech-stack">
+                        <span>UI/UX</span><span>Design</span><span>Web</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

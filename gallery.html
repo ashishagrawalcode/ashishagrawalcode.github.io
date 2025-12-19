@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/code.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moments | Ashish Agrawal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-container">
+        <div class="grid-overlay"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <div class="scroll-progress"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Ashish<span class="dot">.</span></a>
+        <ul class="nav-links">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html" class="active">Moments</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#contact" class="cta-btn">Say Hi!</a></li>
+        </ul>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </nav>
+    
+    <div class="mobile-menu">
+        <i class="fas fa-times close-menu"></i>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Moments</a>
+        <a href="blog.html">Blog</a>
+    </div>
+
+    <main class="container page-content">
+        
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="tech">Tech</button>
+            <button class="filter-btn" data-filter="travel">Travel</button>
+            <button class="filter-btn" data-filter="life">Life</button>
+        </div>
+
+        <div class="masonry-grid">
+            
+            <div class="masonry-item" data-category="tech">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="Setup">
+                <div class="caption-overlay">Late Night Grinds</div>
+            </div>
+
+            <div class="masonry-item" data-category="nature">
+                <img src="assets/10.jpeg" alt="Nature">
+                <div class="caption-overlay">The College Silence</div>
+            </div>
+
+            <div class="masonry-item" data-category="travel">
+                <img src="assets/7.jpeg" alt="Travel">
+                <div class="caption-overlay">Above the clouds</div>
+            </div>
+
+            <div class="masonry-item" data-category="life">
+                <img src="assets/12.jpeg" alt="BSH-Hostel">
+                <div class="caption-overlay">The Shining Hostel</div>
+            </div>
+
+            <div class="masonry-item" data-category="nature">
+                <img src="assets/9.jpeg" alt="Morning Sun">
+                <div class="caption-overlay">The Morning Sun</div>
+            </div>
+
+            <div class="masonry-item" data-category="life">
+                <img src="assets/5.jpeg" alt="Glitch">
+                <div class="caption-overlay">The Speedy Life</div>
+            </div>
+
+            <div class="masonry-item" data-category="life">
+                <img src="assets/InnovationDay.jpeg" alt="Innovation Day">
+                <div class="caption-overlay">The Innovation Day</div>
+            </div>
+
+            <div class="masonry-item" data-category="travel">
+                <img src="assets/2.jpeg" alt="Christmas">
+                <div class="caption-overlay">The Christmas Tree</div>
+            </div>
+
+            <div class="masonry-item" data-category="travel">
+                <img src="assets/4.jpeg" alt="Road">
+                <div class="caption-overlay">The Perfect Shot</div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
